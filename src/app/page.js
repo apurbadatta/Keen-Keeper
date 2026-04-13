@@ -2,7 +2,7 @@
 export default function Home() {
   return (
    <div>
-    hello my name is apurba 
+    hello home
     
    </div>
   );
