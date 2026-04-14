@@ -3,14 +3,15 @@
 import React from 'react';
 import { BellIcon, ArchiveBoxIcon, TrashIcon, PhoneIcon, ChatBubbleLeftIcon, VideoCameraIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { useTimeline } from '@/context/TimelineContext';
+import { toast } from 'react-toastify';
 
 const FriendDetails = ({ friend, onBack }) => {
     const { addActivity } = useTimeline();
 
 const handleAction = (type) => {
     addActivity(type, friend.name);
-    alert(`${type} added to timeline!`); 
-  };
+    toast.success(`${type} added to timeline!`,
+      { position: "top-center"}) };
 
 
 
