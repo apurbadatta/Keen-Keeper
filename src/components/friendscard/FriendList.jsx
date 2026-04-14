@@ -1,8 +1,24 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import FriendCard from "./FriendCard";
+import FriendDetails from "./FriendDetails"; 
 import friendsData from "../../../public/friends.json";
 
 const FriendList = () => {
+  
+  const [selectedFriend, setSelectedFriend] = useState(null);
+
+  
+  if (selectedFriend) {
+    return (
+      <FriendDetails 
+        friend={selectedFriend} 
+        onBack={() => setSelectedFriend(null)} 
+      />
+    );
+  }
+
   return (
     <section className="bg-[#fcfdfd] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -12,7 +28,11 @@ const FriendList = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {friendsData.map((friend) => (
-            <FriendCard key={friend.id} friend={friend} />
+            <FriendCard 
+              key={friend.id} 
+              friend={friend} 
+              onClick={() => setSelectedFriend(friend)} 
+            />
           ))}
         </div>
       </div>
