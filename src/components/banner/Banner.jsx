@@ -2,7 +2,7 @@ import { PlusIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 const statItems = [
-  { id: 1, title: "Total Friends", value: "10" },
+  { id: 1, title: "Total Friends", value: "12" },
   { id: 2, title: "On Track", value: "3" },
   { id: 3, title: "Need Attention", value: "6" },
   { id: 4, title: "Interactions This Month", value: "12" },
