@@ -91,13 +91,15 @@ const FriendDetails = ({ friend, onBack }) => {
             </div>
           </div>
           <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-            <div>
-              <p className=" font-bold  ">Relationship Goal</p>
-              <p className="text-gray-400 text-xs mt-2 font-semibold">
-                Connect every {friend.goal} days
-              </p>
+            <div className="flex justify-between">
+              <div>
+                <p className=" font-bold  ">Relationship Goal</p>
+                <p className="text-gray-400 text-xs mt-2 font-semibold">
+                  Connect every {friend.goal} days
+                </p>
+              </div>
+              <button className="btn">Edit</button>
             </div>
-            
           </div>
 
           <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
