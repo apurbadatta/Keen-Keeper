@@ -16,7 +16,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Home", href: "/", icon: HomeIcon },
+    { name: "Home", href: "/home", icon: HomeIcon },
     { name: "Timeline", href: "/timeline", icon: ClockIcon },
     { name: "Stats", href: "/stats", icon: ChartBarIcon },
   ];
@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/home" className="flex items-center gap-1">
             <span className="text-xl font-bold text-slate-900">Keen</span>
             <span className="text-xl font-semibold text-emerald-800">
               Keeper

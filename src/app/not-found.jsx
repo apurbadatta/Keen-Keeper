@@ -23,7 +23,7 @@ const NotFound = () => {
         {/* Call to Action Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/"
+            href="/home"
             className="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200"
           >
             Go Back Home
