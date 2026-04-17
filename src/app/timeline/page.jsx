@@ -14,7 +14,7 @@ const TimelinePage = () => {
   });
 
   return (
-    <div className="max-w-4xl mx-auto p-6 min-h-[60vh]">
+    <div className="max-w-7xl p-6 min-h-[60vh]">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl font-bold text-slate-800">Timeline</h2>
 
